@@ -1,0 +1,6 @@
+/* Медиа-запрос для маленьких устройств */
+@media (max-width: 450px) {
+    .task-manager {
+        max-width: 320px;
+    }
+}

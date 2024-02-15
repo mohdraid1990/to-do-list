@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Описание сайта -->
+  <meta name="description" content="Веб-сайт дизайна, который предлагает вам уникальный опыт превращения ваших идей в реальность. Мы предоставляем инновационные и захватывающие домашние дизайны, которые подходят вашему образу жизни. Обнаружьте разнообразие уникальных и элегантных дизайнов и позвольте вашей фантазии взлететь, чтобы создать дом вашей мечты. Начните сегодня и сделайте ваш дом отражением вашей личности, обеспечивая вам комфорт и красоту, которую вы заслуживаете.">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Медиа-запросы -->
+  <link rel="stylesheet" href="media-query.css">
+  <!-- Заголовок -->
+  <title>Управление задачами</title>
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <div class="task-manager">
+    <h1>Управление задачами</h1>
+    <label for="taskTitle">Название задачи</label>
+    <input type="text" id="taskTitle" placeholder="Введите название задачи">
+    <label for="taskDescription">Описание задачи</label>
+    <textarea id="taskDescription" placeholder="Введите описание задачи"></textarea>
+    <button onclick="addTask()">Добавить задачу</button>
+    <div id="tasks"></div>
+    <!-- Фильтр -->
+    <div class="filter">
+      <button onclick="filterTasks('all')">Все задачи</button>
+      <button onclick="filterTasks('active')">Активные задачи</button>
+      <button onclick="filterTasks('completed')">Завершенные задачи</button>
+    </div>
+  </div>   
+  
+  <script src="main.js"></script>
+</body>
+</html>  
